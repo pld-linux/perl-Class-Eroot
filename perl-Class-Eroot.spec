@@ -5,12 +5,12 @@ Summary:	Class::Eroot perl module
 Summary(pl):	Modu³ perla Class::Eroot
 Name:		perl-Class-Eroot
 Version:	19960603
-Release:	7
+Release:	8
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_sitelib}/Class/*.pm
-%{_mandir}/*
+%{_mandir}/man?/*
