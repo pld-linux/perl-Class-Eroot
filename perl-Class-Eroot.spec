@@ -5,8 +5,8 @@ Summary:	Class::Eroot perl module
 Summary(pl):	Modu³ perla Class::Eroot
 Name:		perl-Class-Eroot
 Version:	19960603
-Release:	6
-License:	GPL
+Release:	7
+License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -29,18 +29,20 @@ zasada.
 %prep
 %setup -q -n %{pdir}-%{pnam}
 
+%build
+touch Makefile.PL
+perl -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Class::Eroot");'
+%{__make}
+
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{perl_sitelib}/Class
 
-install Eroot.pm $RPM_BUILD_ROOT%{perl_sitelib}
-install Template.pm $RPM_BUILD_ROOT%{perl_sitelib}/Class
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%{perl_sitelib}/*.pm
 %{perl_sitelib}/Class/*.pm
+%{_mandir}/*
