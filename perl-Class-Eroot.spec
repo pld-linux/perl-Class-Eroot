@@ -6,7 +6,7 @@ Summary(pl):	Modu³ perla Class::Eroot
 Name:		perl-Class-Eroot
 Version:	19960603
 Release:	9
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	71e3a3aafb41275605816c0b547fd403
