@@ -3,7 +3,7 @@ Summary:	Class::Eroot perl module
 Summary(pl):	Modu³ perla Class::Eroot
 Name:		perl-Class-Eroot
 Version:	19960603
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -16,13 +16,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Class::Eroot is a simple object persistence engine that can persist any
-datatype.  Some objects will need to have an extra method or two added to
+datatype. Some objects will need to have an extra method or two added to
 their classes, but this is probably the exception rather than the rule.
+
+%description -l pl
+Class::Eroot to prosty mechanizm przechowywania obiektów, który mo¿e
+przechowaæ dowolny typ danych. Niektóre obiekty potrzebuj± dodatkowej
+metody czy dwóch dodanych do swoich klas, ale to bardziej wyj±tek ni¿
+zasada.
 
 %prep
 %setup -q -n Class-Eroot
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
