@@ -5,7 +5,7 @@ Summary:	Class::Eroot perl module
 Summary(pl):	Modu³ perla Class::Eroot
 Name:		perl-Class-Eroot
 Version:	19960603
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -36,14 +36,11 @@ install -d $RPM_BUILD_ROOT%{perl_sitelib}/Class
 install Eroot.pm $RPM_BUILD_ROOT%{perl_sitelib}
 install Template.pm $RPM_BUILD_ROOT%{perl_sitelib}/Class
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %{perl_sitelib}/*.pm
-%dir %{perl_sitelib}/Class
 %{perl_sitelib}/Class/*.pm
