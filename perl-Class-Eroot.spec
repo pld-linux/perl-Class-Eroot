@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Class
-%define	pnam	Eroot
+%define		pdir	Class
+%define		pnam	Eroot
 Summary:	Class::Eroot - an eternal root to handle persistent objects
 Summary(pl):	Class::Eroot - wieczny "korzeñ" do przechowywania trwa³ych obiektów
 Name:		perl-Class-Eroot
