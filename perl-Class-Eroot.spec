@@ -31,7 +31,7 @@ zasada.
 
 %build
 touch Makefile.PL
-perl -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Class::Eroot");'
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Class::Eroot");'
 %{__make}
 
 %install
