@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Class
 %define	pnam	Eroot
-%include	/usr/lib/rpm/macros.perl
 Summary:	Class::Eroot perl module
 Summary(pl):	Modu³ perla Class::Eroot
 Name:		perl-Class-Eroot
 Version:	19960603
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -28,7 +27,7 @@ metody czy dwóch dodanych do swoich klas, ale to bardziej wyj±tek ni¿
 zasada.
 
 %prep
-%setup -q -n Class-Eroot
+%setup -q -n %{pdir}-%{pnam}
 
 %install
 rm -rf $RPM_BUILD_ROOT
