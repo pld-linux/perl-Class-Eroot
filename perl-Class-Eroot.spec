@@ -6,8 +6,14 @@ Version:	19960603
 Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
+Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
 Group(de):	Entwicklung/Sprachen/Perl
+Group(es):	Desarrollo/Lenguajes/Perl
+Group(fr):	Development/Langues/Perl
+Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
+Group(pt):	Desenvolvimento/Linguagens/Perl
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Class/Class-Eroot-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
@@ -15,9 +21,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Class::Eroot is a simple object persistence engine that can persist any
-datatype. Some objects will need to have an extra method or two added to
-their classes, but this is probably the exception rather than the rule.
+Class::Eroot is a simple object persistence engine that can persist
+any datatype. Some objects will need to have an extra method or two
+added to their classes, but this is probably the exception rather than
+the rule.
 
 %description -l pl
 Class::Eroot to prosty mechanizm przechowywania obiektów, który mo¿e
