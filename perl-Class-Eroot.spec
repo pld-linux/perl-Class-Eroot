@@ -2,7 +2,7 @@
 %define		pdir	Class
 %define		pnam	Eroot
 Summary:	Class::Eroot - an eternal root to handle persistent objects
-Summary(pl):	Class::Eroot - wieczny "korzeñ" do przechowywania trwa³ych obiektów
+Summary(pl.UTF-8):   Class::Eroot - wieczny "korzeÅ„" do przechowywania trwaÅ‚ych obiektÃ³w
 Name:		perl-Class-Eroot
 Version:	19960603
 Release:	11
@@ -21,10 +21,10 @@ any datatype. Some objects will need to have an extra method or two
 added to their classes, but this is probably the exception rather than
 the rule.
 
-%description -l pl
-Class::Eroot to prosty mechanizm przechowywania obiektów, który mo¿e
-przechowaæ dowolny typ danych. Niektóre obiekty potrzebuj± dodatkowej
-metody czy dwóch dodanych do swoich klas, ale to bardziej wyj±tek ni¿
+%description -l pl.UTF-8
+Class::Eroot to prosty mechanizm przechowywania obiektÃ³w, ktÃ³ry moÅ¼e
+przechowaÄ‡ dowolny typ danych. NiektÃ³re obiekty potrzebujÄ… dodatkowej
+metody czy dwÃ³ch dodanych do swoich klas, ale to bardziej wyjÄ…tek niÅ¼
 zasada.
 
 %prep
