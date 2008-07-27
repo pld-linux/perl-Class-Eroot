@@ -5,7 +5,7 @@ Summary:	Class::Eroot - an eternal root to handle persistent objects
 Summary(pl.UTF-8):	Class::Eroot - wieczny "korzeń" do przechowywania trwałych obiektów
 Name:		perl-Class-Eroot
 Version:	19960603
-Release:	11
+Release:	12
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
